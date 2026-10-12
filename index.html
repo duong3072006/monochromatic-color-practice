@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Phối màu Đơn tông (Monochromatic)</title>
+    <style>
+        /* BẢNG MÀU ĐƠN TÔNG (MONOCHROMATIC PALETTE) 
+           - Màu bậc 1 (Primary/Logo): #00ADEE
+           - Màu bậc 2: #00B2EF
+           - Màu bậc 4 (Header/Banner background): #00BFF2
+           - Màu bậc 7 (Content background): #8DD7F7
+           - Màu bậc 9 (Footer background): #C6E9FA
+        */
 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000; /* Bước 6: Giữ nguyên màu chữ cho toàn bộ trang là màu đen */
+        }
+
+        /* Bước 2: Thay đổi màu nền Header / Banner thành màu bậc 4 (#00BFF2) */
+        header {
+            background-color: #00BFF2;
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        /* Bước 3: Thay đổi màu nền phần ON SALE / PREVIEW thành màu bậc 1 (#00ADEE) hoặc bậc 2 (#00B2EF) */
+        .badge-sale, .btn-preview {
+            background-color: #00ADEE; /* Màu bậc 1 */
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-preview:hover {
+            background-color: #00B2EF; /* Màu bậc 2 */
+        }
+
+        /* Bước 4: Đổi màu nền phần nội dung thành màu bậc 7 (#8DD7F7) */
+        main, .content-section {
+            background-color: #8DD7F7;
+            padding: 30px;
+            min-height: 300px;
+        }
+
+        /* Bước 5: Đổi màu nền phần Footer thành màu bậc 9 (#C6E9FA) */
+        footer {
+            background-color: #C6E9FA;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trang web Thực hành Phối màu</h1>
+        <p>Phối màu Đơn tông (Monochromatic) dựa trên màu chủ đạo #00ADEE</p>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <h2>Sản phẩm nổi bật</h2>
+            <span class="badge-sale">ON SALE</span>
+            <p>Nội dung mô tả sản phẩm được đặt trên nền màu bậc 7 (#8DD7F7) giúp mắt cảm thấy nhẹ nhàng, dễ đọc.</p>
+            <button class="btn-preview">PREVIEW</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bài thực hành Phối màu Web - CodeGym</p>
+    </footer>
+
+</body>
+</html>
